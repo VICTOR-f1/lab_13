@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddbookActivity"
+    android:background="#29ae6c">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="321dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#9C85273A"
+        android:text="@string/add_boks"
+        android:textColor="#E38E0F"
+        android:textSize="25sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:textColor="#780A77"
+        android:textColorHint="#780A77"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:id="@+id/editTextTexjanr"
+        android:layout_width="360dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:textSize="22sp"
+        android:hint="@string/janr"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTexttitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <EditText
+        android:textColor="#7A2222"
+        android:id="@+id/editTextTexttitle"
+        android:layout_width="360dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:textColorHint="#7A2222"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:hint="@string/name_book"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <EditText
+        android:textColor="#7A2222"
+        android:id="@+id/editTextTextcover_type"
+        android:layout_width="360dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:textColorHint="#7A2222"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:hint="@string/cover_type"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <EditText
+        android:textColor="#7A2222"
+        android:id="@+id/editTextTextyear_of_publishing"
+        android:layout_width="360dp"
+        android:layout_height="76dp"
+        android:ems="10"
+        android:hint="@string/age_publisher"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColorHint="#7A2222"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <EditText
+        android:textColor="#7A2222"
+        android:id="@+id/editTextTextNUMBER_OF_PAGES"
+        android:layout_width="360dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:textColorHint="#7A2222"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:hint="@string/count_pages"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
+
+    <EditText
+        android:textColor="#7A2222"
+        android:id="@+id/editTextTextEmailAuhtor"
+        android:layout_width="360dp"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:hint="@string/auhtor"
+        android:textColorHint="#7A2222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#29ae6c">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/tv_janr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp"    />
+
+
+    <TextView
+        android:id="@+id/tv_Auhtor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_year_of_publishing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp"  />
+
+
+    <TextView
+        android:id="@+id/tv_cover_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_NUMBER_OF_PAGES"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">farnosovvictorlab12var</string>
+    <string name="Hello_write_acctoin">Привет, выбери действие:</string>
+    <string name="add_boks">Добавить книги</string>
+    <string name="show_book">Показать книги</string>
+    <string name="name_book">название книги</string>
+    <string name="janr">жанр</string>
+    <string name="cover_type">тип обложки</string>
+    <string name="age_publisher">год выпуска</string>
+    <string name="count_pages">количество страниц</string>
+    <string name="auhtor">автор</string>
+
+</resources>
