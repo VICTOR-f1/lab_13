@@ -17,6 +17,6 @@ data class Book(
     val year_of_publishing_data :Int=0,
     var cover_type_data:String=" ",
     val NUMBER_OF_PAGES_data :Int=0,
-
+    var genre_data_from_book_class:String=""
 
     )

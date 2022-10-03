@@ -29,6 +29,7 @@ class Book_rv_adapter (сontext:Context? , val data:MutableList<Book>): Recycler
 
     override fun onBindViewHolder(holder: Book_view_Holder, position: Int) {
         val  item= data[position]
+        holder.genreTextView.text =       "жанр : "+item.genre_data_from_book_class
         holder.nameTextView.text =       "Название : "+item.title_data
         holder.AuhtorTextView.text=      "Автор : "+item.author_data
         holder.publishingTextView.text = "Год публикации: "+item.year_of_publishing_data
@@ -39,7 +40,7 @@ class Book_rv_adapter (сontext:Context? , val data:MutableList<Book>): Recycler
 
     // холдер
     inner class Book_view_Holder (iteamView: View): RecyclerView.ViewHolder(iteamView),View.OnClickListener {
-
+        var genreTextView: TextView =iteamView.findViewById(R.id.tv_janr)
         var nameTextView: TextView =iteamView.findViewById(R.id.tv_title)
       //  var janrTextView: TextView =iteamView.findViewById(R.id.tv_janr)
         var AuhtorTextView: TextView =iteamView.findViewById(R.id.tv_Auhtor)
