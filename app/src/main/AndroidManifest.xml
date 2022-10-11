@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TryListJson">
         <activity
+            android:name=".edit_and_remove"
+            android:exported="false" />
+        <activity
             android:name=".for_comit"
             android:exported="false" />
         <activity

@@ -27,10 +27,11 @@ class ShowBookActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        if (index != -1) {
-            BookList.clear()
-            rv.adapter?.notifyItemChanged(index)
 
+        Log.d("asd", "wgfdtukyukyuyk $index " )
+
+        if (index != -1){
+            updeteInfo()
         }
     }
 
@@ -53,8 +54,6 @@ class ShowBookActivity : AppCompatActivity() {
                     val intent = Intent(this@ShowBookActivity, AddbookActivity::class.java)
                     intent.putExtra("number", position)
                     startActivity(intent)
-                    Toast.makeText(this@ShowBookActivity, "position: $position", Toast.LENGTH_SHORT)
-                        .show()
                 }
             }
             adapter.setClickListener(rvListener)

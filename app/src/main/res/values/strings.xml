@@ -10,5 +10,6 @@
     <string name="count_pages">количество страниц</string>
     <string name="auhtor">автор</string>
     <string name="remove_book">удалить книги</string>
+    <string name="genre">genre</string>
 
 </resources>
