@@ -13,15 +13,17 @@ interface BookDAO {
     @Insert
     fun addGenre(bookType: BookType)
     @Query("SELECT * FROM $GENRE_TABLE WHERE genre_data=:genre")
-    fun  getOnlyGenre(genre:String):LiveData<BookType>
+    fun  getOnlyGenre(genre:String):Int
     @Update
     fun  savetGenre(bookType: BookType)
     @Delete
     fun killGenre(bookType: BookType)
 
     /* таблица Book*/
-    @Query("SELECT * FROM $MAIN_BOOK_TABLE")
+    @Query("SELECT * FROM $MAIN_BOOK_TABLE  ")
     fun getAllBookMain():LiveData<List<Book>>
+    @Query("SELECT genre_data  FROM $GENRE_TABLE WHERE _id=:id ")
+    fun getGenreString(id:Int):String
     @Query("SELECT * FROM $MAIN_BOOK_TABLE WHERE _id=:id")
     fun  getBookMain(id:Int):LiveData<Book>
     @Insert
